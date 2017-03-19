@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> * pwd (show current working directory path)
+>> * mkdir aaa (create a dirctory named aaa)
+>> * rm -rf aaa (delete the directory named aaa)
+>> * touch tmp (create a file named tmp using `touch command`)
+>> * rm tmp (delete the file named tmp)
+>> * move a b (rename the file a as b)
+>> * ls -a (list all th files including hidden files)
+>> * cp b ../ (copy file b to the upper directory)
+>> * ln -s ../tmp (creat a soft link of the file tmp in the upper directory)
+>> * which python (show the path of python)
 
 ---
 
