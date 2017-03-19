@@ -57,11 +57,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
->> -a	Displays all files.
->> -b	Displays nonprinting characters in octal.
->> -c	Displays files by file timestamp.
->> -C	Displays files in a columnar format (default)
->> -d	Displays only directories.
+>> -a	Displays all files.  
+>> -b	Displays nonprinting characters in octal.  
+>> -c	Displays files by file timestamp.  
+>> -C	Displays files in a columnar format (default)  
+>> -d	Displays only directories.  
 
 ---
 
@@ -69,7 +69,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
->> It is used to build and execute command lines from standard input
+>> It is used to build and execute command lines from standard input  
 >> Example: find /path -type f -print | xargs rm
 
  
