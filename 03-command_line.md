@@ -43,7 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> * ls (list the diretory contents)
+>> * ls -a (including hidden files)
+>> * ls -l (list in long format)
+>> * ls -lh (use unit suffixes in the descriptions of file sizes)
+>> * ls -lah (same as -lh, but including hidden files)
+>> * ls -t (sort by time modified)
+>> * ls -Glp (enable colorized output and add slashes after directory names)
 
 ---
 
@@ -51,7 +57,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> -a	Displays all files.
+>> -b	Displays nonprinting characters in octal.
+>> -c	Displays files by file timestamp.
+>> -C	Displays files in a columnar format (default)
+>> -d	Displays only directories.
 
 ---
 
@@ -59,7 +69,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> It is used to build and execute command lines from standard input
+>> Example: find /path -type f -print | xargs rm
 
  
 
