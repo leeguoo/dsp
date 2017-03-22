@@ -32,6 +32,7 @@ How are Python lists and sets similar and different? Give examples of using both
 >> a = range(10)+range(5)
 >> a = list(set(a))
 >>```
+>>It is faster to find an element in a set, because sets are implemented using hash tables. The speed of element finding does not depend on the sizes of sets. On the other hand, to find an element in list, the whole list needs to be searched.
 
 ---
 
@@ -39,7 +40,12 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's `lambda` is a operator. It is used to creat anonymous functions.  
+>>```python
+>>#example
+>>a = [('rice', 50), ('sugar', 40), ('salt', 100), ('peper', 30)]
+>>sorted(a,key=lambda a: a[1])
+>>```
 
 ---
 
@@ -47,7 +53,19 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is a way to create a list from an iterable (e.g. another list).
+>>```python
+>>#create a list using list comprehension
+>>a = [x*2 for x in range(10)]
+>>#create the same list using map
+>>a = map(lambda x: x*2, range(10))
+>>#create the same list using filter
+>>a = filter(lambda x: x%2==0, range(20))
+>>#set comprehension
+>>{x*2 for x in range(10)}
+>>#dictionary comprehension
+>>{x:x*2 for x in range(10)}
+>>```
 
 ---
 
@@ -56,13 +74,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ### Q5. Datetime
 Use Python to compute days between start and stop date.   
 a.  
-
 ```
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937  
 
 b.  
 ```
@@ -70,7 +87,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513 
 
 c.  
 ```
@@ -78,7 +95,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850  
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
