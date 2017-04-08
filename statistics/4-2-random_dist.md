@@ -16,8 +16,8 @@
 >> plt.xlabel("Random Variate")
 >> plt.savefig("4_2_pmf.pdf")
 >>```
->>![\label{pmf}](4_2_pmf.pdf)
->>\ref{pmf}.
+>>![\label{pmf}](https://github.com/leeguoo/dsp/blob/master/statistics/4_2_pmf.pdf)
+>>
 >>```python
 >> plt.plot(x,1.0*np.cumsum(y)/y.sum())
 >> plt.savefig("4_2_cdf.pdf")
