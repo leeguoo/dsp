@@ -14,7 +14,11 @@
 >> plt.bar(x,1.0*y/y.sum(),width=1.0/len(x))
 >> plt.ylabel("PMF")
 >> plt.xlabel("Random Variate")
->> plt.savefig("q3_pmf.pdf")
+>> plt.savefig("4_2_pmf.pdf")
+>>```
+>>![\label{pmf}](4_2_pmf.pdf)
+>>\ref{pmf}.
+>>```python
 >> plt.plot(x,1.0*np.cumsum(y)/y.sum())
->> plt.savefig("q3_cdf.pdf")
+>> plt.savefig("4_2_cdf.pdf")
 >>```  
