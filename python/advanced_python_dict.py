@@ -1,45 +1,28 @@
-f = open('faculty.csv','r')
-lines = f.readlines()
-f.close()
+import pandas as pd
+from collections import defaultdict
+
+df = pd.read_csv("faculty.csv")
 
 #q6
-faculty_dict = {}
-for line in lines[1:]:
-    items = line[:-1].split(',')
-    k = items[0].split()[-1]
-    v = items[1:]
-    v[0] = v[0].lstrip()
-    v[1] = v[1][:v[1].index('Professor')+9]
-    if faculty_dict.get(k,None):
-        faculty_dict[k].append(v)
-    else:
-        faculty_dict[k] = [v]
+def getpairs1(x):
+    return x[0].split()[-1],[x[1].lstrip(),x[2][:x[2].index('Professor')+9],x[3]]
 
-result = []
-for k in faculty_dict.keys()[:3]:
-    result.append((k,faculty_dict[k]))
-print result
+d = defaultdict(list)
+for k, v in list(df.apply(getpairs1,axis=1)):
+    d[k].append(v)
+print sorted([(k,v) for k,v in d.items()])[:3]
 print ""
 
 #q7
-faculty_dict = {}
-for line in lines[1:]:
-    items = line[:-1].split(',')
-    k = (items[0].split()[0],items[0].split()[-1])
-    v = items[1:]
-    v[0] = v[0].lstrip()
-    v[1] = v[1][:v[1].index('Professor')+9]
-    if faculty_dict.get(k,None):
-        faculty_dict[k].append(v)
-    else:
-        faculty_dict[k] = [v]
+def getpairs2(x):
+    return (x[0].split()[0],x[0].split()[-1]),[x[1].lstrip(),x[2][:x[2].index('Professor')+9],x[3]]
 
-result = []
-for k in faculty_dict.keys()[:3]:
-    result.append((k,faculty_dict[k]))
-print result
+d = defaultdict(list)
+for k, v in list(df.apply(getpairs2,axis=1)):
+    d[k].append(v)
+print sorted([(k,v) for k,v in d.items()])[:3]
 print ""
 
 #q8
-ks = faculty_dict.keys()
+ks = d.keys()
 print sorted(ks,key=lambda k: k[1])

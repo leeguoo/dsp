@@ -66,7 +66,7 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> [('Putt', [['PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']]), ('Feng', [['Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']]), ('Bilker', [['Ph.D.', 'Professor', 'warren@upenn.edu']])]
+>> [('Bellamy', [['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]), ('Bilker', [['Ph.D.', 'Professor', 'warren@upenn.edu']]), ('Bryan', [['PhD', 'Assistant Professor', 'bryanma@upenn.edu']])]
 
 #### Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -76,7 +76,7 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> [(('Yimei', 'Li'), [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu']]), (('Hongzhe', 'Li'), [['Ph.D', 'Professor', 'hongzhe@upenn.edu']]), (('Justine', 'Shults'), [['Ph.D.', 'Professor', 'jshults@mail.med.upenn.edu']])]
+>> [(('A.', 'Localio'), [['JD MA MPH MS PhD', 'Associate Professor', 'rlocalio@upenn.edu']]), (('Alisa', 'Stephens'), [['Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]), (('Andrea', 'Troxel'), [['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']])]
 
 #### Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
