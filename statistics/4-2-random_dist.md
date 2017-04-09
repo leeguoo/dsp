@@ -19,6 +19,9 @@
 >>![](https://github.com/leeguoo/dsp/blob/master/statistics/4_2_pmf.png)
 >>
 >>```python
+>> plt.figure()
+>> plt.ylabel("CDF")
+>> plt.xlabel("Random Variate")
 >> plt.plot(x,1.0*np.cumsum(y)/y.sum())
 >> plt.savefig("4_2_cdf.png")
 >>```  
