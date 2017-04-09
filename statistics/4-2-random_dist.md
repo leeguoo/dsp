@@ -22,3 +22,4 @@
 >> plt.plot(x,1.0*np.cumsum(y)/y.sum())
 >> plt.savefig("4_2_cdf.pdf")
 >>```  
+>>![](https://github.com/leeguoo/dsp/blob/master/statistics/4_2_cdf.pdf)
