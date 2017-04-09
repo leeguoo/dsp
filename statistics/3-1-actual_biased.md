@@ -27,6 +27,6 @@
 >>plt.legend()
 >>plt.savefig("3_1.png")
 >>```
->>actual mean: 1.02420515504
->>bias mean: 2.40367910066
->>![]((https://github.com/leeguoo/dsp/blob/master/statistics/3_1.png)
+>>actual mean: 1.02420515504  
+>>bias mean: 2.40367910066  
+>>![](https://github.com/leeguoo/dsp/blob/master/statistics/3_1.png)
